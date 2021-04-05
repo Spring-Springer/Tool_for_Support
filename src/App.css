@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: rgb(245, 228, 228) ;
 }
 
 .App-logo {
@@ -9,23 +10,68 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo192-spin infinite 20s linear;
   }
 }
+.mr-auto{
+  font-weight: bold; 
+  padding-left:20px;  
+  font-size: 18px; 
+  text-indent:10px   /*ระยะห่าง ของคำแต่ละคำ*/
+ 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.nopadding a:hover{  /*เวลาเลือกจะมีกรอบสี*/
+  background-color: rgb(211, 233, 248);
+  
+}
+
+.App{
+  
+  background: url("../src/image/kk.jpg");
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.search{
+  float: right;
+  padding-right: 150px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+h1{
+  padding-top: 60px;
+  font-size: 72px;
+  background: -webkit-linear-gradient(rgb(76, 194, 230), rgb(160, 177, 11));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.title,
+.page-title {
+	font-weight: 700;
+	margin-bottom: 1rem;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +81,5 @@
   to {
     transform: rotate(360deg);
   }
+  
 }
