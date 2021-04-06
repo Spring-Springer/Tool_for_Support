@@ -24,7 +24,7 @@ function App() {
         fixed="top" className="nopadding">
         <Navbar.Brand href="/home">
           <img
-            src="cg.png"
+            src="../cg.png"
             width="70"
             height="40"
             className="d-inline-block align-top"

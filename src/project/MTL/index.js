@@ -2,6 +2,9 @@ import React from 'react'
 import './index.css';
 import { getTokenCA } from "./ca-encrypt/caToken.js";
 import { runCA } from "./ca-encrypt/caEncrypt.js"
+
+
+
 const MtlPage = () => {
   const getFileForCA = async () => {
     var f = document.getElementById("EncCA").files;
@@ -20,22 +23,80 @@ const MtlPage = () => {
     <div className="mtl">
       <section class="hero is-danger">
         <div className="container">
-          <div className="mtl title">MTL
+          <div className="mtl title">MTL 
+        
+          </div >
+          <p className="button button-large is-primary"> ข้อมูลสำหรับพนักงานใหม่ >>><a href=
+        "https://docs.google.com/document/d/1yqdvvC1ZGtLq92uSoRK1ZK9qCk7S-Mr4kgWu7xi36q0/edit" 
+        target="button" class="btn btn-primary btn-sm"
+        >คลิ๊ก</a> 
+        </p>
+          <br></br>
+         
+          <br></br>
+          <div class="MenuBarTextAlign">
+          <div class="card-deck">
+        <div class="card text-white bg-dark  border-danger " >
+
+          <div class="card-body">
+
+
+            <h3 class="card-title">EncryptCA for MTL</h3>
+          <p>ใช้สำหรับการครอบ CA</p>
+            <a href="MTL/EncryptCA" class="btn btn-info">คลิ๊ก</a>
+
           </div>
+        </div> 
+
+        <div class="card text-white bg-dark border-danger">
+
+        <div class="card-body">
+
+          <h3 class="card-title">Basic WEB API</h3>
+          <p class="card-text">ศึกษาการสร้าง WEB API แบบใช้งานได้จริง</p>
+
+          <a href="#" class="btn btn-info">อ่านต่อ...</a>
+
+        </div>
+      </div>
+
+      <div class="card text-white bg-dark border-danger">
+
+<div class="card-body">
+
+  <h3 class="card-title">GEN SI</h3>
+  <p class="card-text">การใช้ตัว GEN เอกสาร</p>
+
+  <a href="#" class="btn btn-info">อ่านต่อ...</a>
+
+
+
+</div>
+
+</div>
+
+      </div>
           <p>บล็อคเล่าเรื่องราวเกี่ยวกับ Code / Programming ต่างๆ</p>
           <p>ทั้ง JavaScript, Node.js, React.js รวมถึง Stack ที่เจ้าของบล็อคสนใจ</p>
         </div>
-        <div>
+        <div className="wording">
           <h1> EncryptCA for MTL </h1>
+          <br></br>
+       
           <input id="EncCA" type="file" name="inputCA"></input>
           <button className="button" id="buttonCA" onClick={getFileForCA}> Encrypt CA </button>
+          <br></br>
+          <br></br>
           <h2> How to use </h2>
           <p> 1. Connect VPN MTL </p>
           <p> 2. Attached file </p>
           <p> 3. Click Encrypt CA </p>
           <h2> First Time? </h2>
-          <p> 1. Click <a href="https://10.200.51.52/MTL_AuthenInternal/oauth2/token"> Here </a> </p>
+          <p> 1. Click <a href="https://10.200.51.52/MTL_AuthenInternal/oauth2/token"> >>> Here </a> </p>
           <p> 2. Click "Advance" and "process to 10.200.51.52" </p>
+      </div>
+        
+
         </div>
       </section>
     </div>

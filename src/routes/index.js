@@ -7,7 +7,7 @@ import AZAY from '../project/AZAY'
 import TSLI from '../project/TSLI'
 import KTAXA from '../project/KTAXA'
 import THAIL from '../project/THAIL'
-
+import EncryptCA from '../project/MTL/EncryptCA'
 
 export default () => (
   <Switch>
@@ -17,5 +17,6 @@ export default () => (
     <Route exact path="/TSLI" component={TSLI} />
     <Route exact path="/KTAXA" component={KTAXA} />
     <Route exact path="/THAIL" component={THAIL} />
+    <Route exact path="/MTL/EncryptCA" component={EncryptCA} />
   </Switch>
 )
