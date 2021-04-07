@@ -79,22 +79,7 @@ const MtlPage = () => {
           <p>บล็อคเล่าเรื่องราวเกี่ยวกับ Code / Programming ต่างๆ</p>
           <p>ทั้ง JavaScript, Node.js, React.js รวมถึง Stack ที่เจ้าของบล็อคสนใจ</p>
         </div>
-        <div className="wording">
-          <h1> EncryptCA for MTL </h1>
-          <br></br>
-       
-          <input id="EncCA" type="file" name="inputCA"></input>
-          <button className="button" id="buttonCA" onClick={getFileForCA}> Encrypt CA </button>
-          <br></br>
-          <br></br>
-          <h2> How to use </h2>
-          <p> 1. Connect VPN MTL </p>
-          <p> 2. Attached file </p>
-          <p> 3. Click Encrypt CA </p>
-          <h2> First Time? </h2>
-          <p> 1. Click <a href="https://10.200.51.52/MTL_AuthenInternal/oauth2/token"> >>> Here </a> </p>
-          <p> 2. Click "Advance" and "process to 10.200.51.52" </p>
-      </div>
+        
         
 
         </div>
